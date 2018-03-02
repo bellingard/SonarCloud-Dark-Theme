@@ -1,13 +1,22 @@
 @-moz-document domain("sonarcloud.io") {
 
 body,
+.h1,
+h1,
+.h2,
+h2,
 .h3,
 h3,
 .link-base-color,
 .navbar-tabs>li>a,
-.organization-switch .dropdown-toggle
+.slash-separator:after
 {
   color: #949494 !important;
+}
+
+.bg-muted
+{
+  background-color: rgba(255, 255, 255, 0)
 }
 /* Top bar */
 
@@ -48,6 +57,18 @@ h3,
 .modal-foot
 {
   background-color: black
+}
+/* Organizations */
+
+.organization-switch .dropdown-toggle
+{
+  color: #949494 !important;
+}
+
+.organization-switch .dropdown-toggle:hover,
+.organization-switch.open .dropdown-toggle
+{
+  background-color: rgb(32, 32, 32);
 }
 /* Issues pages */
 
@@ -113,6 +134,13 @@ textarea,
   background-color: rgba(255, 255, 255, 0)
   /* Transparent */
 }
+
+.search-navigator-facet-header,
+.search-navigator-facet-header>a,
+a.search-navigator-facet .facet-name
+{
+  color: #949494 !important;
+}
 /* Project & View & Org home pages */
 
 .navbar-context,
@@ -131,6 +159,26 @@ table.data.zebra-hover>tbody>tr:hover
 .coding-rule
 {
   background-color: rgb(32, 32, 32);
+}
+/* Lists */
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover
+{
+  background-color: rgb(32, 32, 32);
+}
+
+a.list-group-item
+{
+  color: #949494 !important;
+}
+/* Tables */
+
+table.data.zebra.zebra-inversed>tbody>tr:nth-child(odd),
+table.data.zebra:not(.zebra-inversed)>tbody>tr:nth-child(2n)
+{
+  background-color: rgb(40, 40, 40);
 }
 /* Overall background */
 
